@@ -1,0 +1,31 @@
+.add {
+ max-width: 400px;
+  padding-top: 40px;
+  margin: auto;
+  h4 {
+    color:  var(--main-color);
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .form-label {
+    font-size: 20px;
+    font-weight: bold;
+     color:var( --purple);
+  }
+
+  .form-control {
+    border-radius: 20px;
+  }
+
+  .btn {
+    padding: 5px 25px;
+    outline: none;
+    border-radius: 20px;
+    float:right;
+    background-color: var(--main-color);
+    border: none;
+  
+  }
+  
+}

@@ -1,0 +1,41 @@
+.strike {
+  text-decoration: line-through;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.5em;
+  padding: 5px 5px;
+  border-radius: 15px;
+  border: 2px solid var(--main-color);
+
+  .form-check-input {
+    min-width: 20px;
+    min-height: 20px;
+    margin: 4px;
+    background-color: var(--main-color);
+    // border: transparent;
+    outline: none;
+    border: none;
+  }
+
+  .title {
+    display: flex;
+  }
+
+  h5 {
+    margin: 0px;
+  }
+
+  .btn {
+    border-radius: 10px;
+    margin: 5px;
+  }
+
+
+}

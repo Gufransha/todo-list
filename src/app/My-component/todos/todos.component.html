@@ -1,0 +1,13 @@
+<app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
+<div class="yours">
+
+    <h4>Your Tasks</h4>
+    <div [@simpleFadeAnimation] class="notodos" *ngIf="this.todos.length === 0; else elseBlock">No Todos to display
+    </div>
+    <ng-template #elseBlock>
+        <div [@simpleFadeAnimation] *ngFor="let todo of todos; index as i">
+            <app-todo-item [todo]="todo" [i]="i" (todoDelete)="deleteTodo($event)" (todoCheckBox)="toggleTodo($event)">
+            </app-todo-item>
+        </div>
+    </ng-template>
+</div>

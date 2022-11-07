@@ -1,0 +1,27 @@
+<!-- <div class="my-3">
+  <h3>{{ todo.title }}</h3>
+  <p>{{ todo.desc }}</p>
+  <button class="btn btn-danger" (click)="onTab()">Delete</button>
+</div> -->
+
+<div class="main" style="">
+    <div style="display: flex;">
+        <input type="checkbox" class="form-check-input" id="todo{{ i }}"  (click)="onCheckboxClick(todo)"
+            [checked]="todo.active" />
+        <div class="title" style=" margin-left: 1em;">
+            <h5 [ngClass]="{ strike: todo.active }">{{ todo.title }}</h5>
+        
+        </div>
+    </div>
+    <!-- <div class="mb-3 form-check">
+      <label class="form-check-label" for="todo{{i}}"> </label>
+  </div> -->
+  <div class="main-ts">
+  <button class="btn btn-sm btn-primary" (click)="onEdit(todo)">
+    <i class="fa fa-pencil" aria-hidden="true"></i>
+  </button>
+    <button class="btn btn-sm btn-danger btn-text" (click)="onClick(todo)">
+        <i class="fa fa-trash" aria-hidden="true"></i>
+    </button>
+    </div>
+</div>
